@@ -1,7 +1,9 @@
-# Application Installation and Usage Instructions
-Run npm install. This is an Todo aplication with focus on backend, so there is no front-end code yet ,The API is connected to a MySQL database with Sequelize, you have to test the app using postman , after loggin , remember to include jwt token in your Authorizationm, choose Bearer Token . 
+//Application usage and instalation 
 
-I have used Jest, supertest, and nodemon as dev-dependencies during the production of this app. However, I had to uninstall nodemon since it clashes with Swagger (I'm unsure why).
+
+Run npm install. This is a Todo application focused on backend development, so there is no front-end code yet. The API is connected to a MySQL database via Sequelize. To test the app, use Postman, and after logging in, remember to include the JWT token in your Authorization header and choose 'Bearer Token'.
+
+I have used Jest, supertest, and nodemon as dev-dependencies during the development of this app. However, I had to uninstall nodemon due to a conflict with Swagger (the reason for this conflict is currently unclear).
 
 After the table is created, create four types of statuses:
 
@@ -9,8 +11,8 @@ Not Started
 Started
 Completed
 Deleted
-(Note: These are case-sensitive.)
-
+(Note: These statuses are case-sensitive.)
+NB: A todo will not be deleted from the database; instead, its status will be changed to 'Deleted'.
 
 # Environment Variables
 HOST = "localhost"
