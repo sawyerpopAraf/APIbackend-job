@@ -13,7 +13,7 @@ module.exports = (sequelize, Sequelize) => {
 		}
 	);
 	Category.associate = function (models) {
-		Category.belongsTo(models.User, { foreignKey: { allowNull: true } });
+		Category.belongsTo(models.User, { foreignKey: { allowNull: false } });
 	};
 	return Category;
 };
