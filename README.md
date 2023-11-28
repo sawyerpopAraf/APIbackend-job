@@ -14,7 +14,7 @@ Deleted
 (Note: These statuses are case-sensitive.)
 NB: A todo will not be deleted from the database; instead, its status will be changed to 'Deleted'.
 
-# Environment Variables
+# Environment Variables example
 HOST = "localhost"
 ADMIN_USERNAME = "admin"
 ADMIN_PASSWORD = "P@ssw0rd"
